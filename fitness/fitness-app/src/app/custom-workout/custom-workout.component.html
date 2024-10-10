@@ -1,0 +1,12 @@
+<div>
+    <h2>Create Custom Workout</h2>
+    <form (ngSubmit)="createWorkout()">
+      <label for="name">Workout Name:</label>
+      <input id="name" [(ngModel)]="workout.name" name="name" required>
+      
+      <label for="duration">Duration (minutes):</label>
+      <input id="duration" type="number" [(ngModel)]="workout.duration" name="duration" required>
+      
+      <button type="submit">Create Workout</button>
+    </form>
+  </div>
